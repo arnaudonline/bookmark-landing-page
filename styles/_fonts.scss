@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+$font-rubik: 'Rubik', sans-serif;
+
+@mixin font-title() {
+    font-family: $font-rubik;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+  
+@mixin font-content() {
+    font-family: $font-rubik;
+    font-size: 1rem;
+    font-weight: 400;
+}
