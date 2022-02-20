@@ -8,7 +8,7 @@ const Tabs = () => {
     };
 
     return (
-        <section className="tabs-container">
+        <div className="tabs-container">
             <div className="tabs-title">
                 <button
                     className={tabState === 0 ? "tabs active-tabs" : "tabs"}
@@ -61,7 +61,7 @@ const Tabs = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     )
 };
 
