@@ -3,30 +3,31 @@
 @import "button";
 
 .accor_block {
-    display: block;
+  display: block;
+  max-width: 540px;
+  margin: 0 auto;
+  button {
+    font-family: $font-rubik;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: left;
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgba(73, 93, 207, 0.20012);
     width: 100%;
-    button {
-        font-family: $font-rubik;
-        font-size: 16px;
-        line-height: 17px;
-        text-align: left;
-        background: none;
-        border: none;
-        border-bottom: 2px solid rgba(73, 93, 207, 0.20012);
-        width: 100%;
-        padding: 21px 0;
-        letter-spacing: 0.5px;
-        opacity: 0.75;
-        position: relative;
-    }
-    p.content {
-        text-align: left;
-        padding: 25px 0;
-        margin-bottom: 10px;
-        height: 0;
-        display: none;
-    }
-    p.active_content {
-        display: block;
-    }
+    padding: 21px 0;
+    letter-spacing: 0.5px;
+    opacity: 0.75;
+    position: relative;
+  }
+  p.content {
+    text-align: left;
+    padding: 25px 0;
+    margin-bottom: 10px;
+    height: 0;
+    display: none;
+  }
+  p.active_content {
+    display: block;
+  }
 }

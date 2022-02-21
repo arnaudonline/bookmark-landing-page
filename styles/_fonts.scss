@@ -1,33 +1,33 @@
 @import "colors";
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 
-$font-rubik: 'Rubik', sans-serif;
+$font-rubik: "Rubik", sans-serif;
 
 @mixin font-title() {
-    font-family: $font-rubik;
-    font-size: 1.8rem;
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 16px;
-    line-height: 40px;
+  font-family: $font-rubik;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 16px;
+  line-height: 40px;
 }
-  
+
 @mixin font-content() {
-    font-family: $font-rubik;
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 32px;
-    line-height: 25px;
+  font-family: $font-rubik;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 32px;
+  line-height: 25px;
 }
 
 @mixin font-btn-primary() {
-    color: white;
-    font-size: 14px!important;
-    @include font-content;
+  color: white;
+  font-size: 14px !important;
+  @include font-content;
 }
 
 @mixin font-btn-secondary() {
-    color: $neutral-dark;
-    font-size: 14px!important;
-    @include font-content;
+  color: $neutral-dark;
+  font-size: 14px !important;
+  @include font-content;
 }

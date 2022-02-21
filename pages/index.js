@@ -75,7 +75,7 @@ export default function Home() {
 
         <section className={styles.newsletter}>
           <p className={styles.letter_space_title}>35,000+ ALREADY JOINED</p>
-          <h6>Stay up-to-date with what<br />we’re doing</h6>
+          <h6>Stay up-to-date with what we’re doing</h6>
           <form action="get">
             <input type="email" name="e-mail" id="e-mail" placeholder='Enter your email address'/>
             <input type="submit" value="Contact Us" className={styles.button_red} />

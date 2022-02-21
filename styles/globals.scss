@@ -87,6 +87,8 @@ h6 {
 }
 
 section {
+  display: block;
+  margin: 0 auto;
   padding: 2rem 32px;
-  width: 100%;
+  max-width: 1170px;
 }

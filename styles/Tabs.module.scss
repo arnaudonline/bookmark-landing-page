@@ -1,50 +1,88 @@
 @import "colors";
 @import "fonts";
 @import "button";
+@import "mixins";
 
 .tabs_title {
-    display: block;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  button.tabs {
+    font-family: $font-rubik;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(73, 93, 207, 0.20012);
     width: 100%;
-    button.tabs {
-        font-family: $font-rubik;
-        font-size: 16px;
-        line-height: 17px;
-        text-align: center;
-        background: none;
-        border: none;
-        border-bottom: 1px solid rgba(73, 93, 207, 0.20012);
-        width: 100%;
-        padding: 21px;
-        letter-spacing: 0.5px;
-        opacity: 0.75;
-        position: relative;
-    }
-    button.active_tabs {
-        opacity: 1;
-    }
-    button.active_tabs:after{
-        content: '';
-        background: $color-secondary;
-        height: 4px;
-        width: 143px;
-        display: block;
-        margin: 0 auto;
-        position: absolute;
-        bottom: 0px;
-        left: 0;
-        right: 0;
-    }
+    padding: 21px;
+    letter-spacing: 0.5px;
+    opacity: 0.75;
+    position: relative;
+  }
+  button.active_tabs {
+    opacity: 1;
+  }
+  button.active_tabs:after {
+    content: "";
+    background: $color-secondary;
+    height: 4px;
+    width: 143px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+  }
 }
 
 .tabs_content {
-    .content {
-        display: none;
+  .content {
+    display: none;
+  }
+  .active_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 72px;
+    img {
+      margin-bottom: 35px;
+      width: 100%;
     }
+    .tabs_infos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+@include tablet {
+  .tabs_title {
+    flex-direction: row;
+  }
+  .tabs_content {
     .active_content {
-        display: block;
-        margin-top: 72px;
-        img {
-            margin-bottom: 35px;
+      align-items: center;
+      justify-content: space-between;
+      img {
+        width: 45%;
+        height: 100%;
+      }
+      .tabs_infos {
+        justify-content: flex-start;
+        align-content: center;
+        padding: 1.5rem;
+        width: 50%;
+        h3,
+        p {
+          text-align: left;
         }
+      }
     }
+  }
 }
