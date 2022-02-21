@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Faq } from "../data/faq";
+import styles from "../styles/Accordeon.module.scss";
 
 const Accordeon = () => {
     const [accorState, setAccorState] = useState(0);
@@ -9,17 +10,21 @@ const Accordeon = () => {
     };
 
     return (
-        <div className="accor-container">
+        <div className={styles.accor_container}>
             {Faq.map((data, key) => {
                 return (
-                    <div className="accor-block" key={key}>
+                    <div className={styles.accor_block} key={key}>
                         <button
-                            className={accorState === key ? "title active-title" : "title"}
+                            className={accorState === key ? styles.title + " " + styles.active_title : styles.title}
                             onClick={() => activeAccor(key)}
                         >
                             {data.question}
                         </button>
-                        <p>{data.answer}</p>
+                        <p
+                            className={accorState === key ? styles.content + " " + styles.active_content : styles.content}
+                        >
+                            {data.answer}
+                        </p>
                     </div>
                 );
             })}

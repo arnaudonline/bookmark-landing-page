@@ -21,64 +21,64 @@ export default function Home() {
 
       <main className={styles.main}>
 
-        <section className="intro">
-          <Image src="/illustration-hero.svg" alt="Illustration Hero" width={50} height={50} />
-          <div className='intro-txt'>
+        <section className={styles.intro}>
+          <Image src="/illustration-hero.svg" alt="Illustration Hero" width={657} height={466} className={styles.intro_image} layout="" objectFit='contain' />
+          <div className={styles.intro_txt}>
             <h1>A Simple Bookmark<br/>Manager</h1>
             <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
-            <div className="button-group">
-              <a href="/" className="button-primary">Get it on Chrome</a>
-              <a href="/" className="button-secondary">Get it on Firefox</a>
+            <div className={styles.button_group}>
+              <a href="/" className={styles.button_primary}>Get it on Chrome</a>
+              <a href="/" className={styles.button_secondary}>Get it on Firefox</a>
             </div>
           </div>
         </section>
 
-        <section className='features'>
+        <section className={styles.features}>
           <h2>Features</h2>
           <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
           <Tabs />
         </section>
 
-        <section className="cards-container">
+        <section className={styles.cards_container}>
           <h3>Download the extension</h3>
           <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
-          <div className="cards-block">
-            <div className="cards">
+          <div className={styles.cards_block}>
+            <div className={styles.cards}>
               <img src="/logo-chrome.svg" alt="Logo de Chrome" />
-              <p className="cards-title">Add to Chrome</p>
+              <p className={styles.cards_title}>Add to Chrome</p>
               <p>Minimum version 62</p>
               <img src="/bg-dots.svg" alt="Separateur de texte" />
-              <a href="/">Add & Install Extension</a>
+              <a href="/" className={styles.button_primary}>Add & Install Extension</a>
             </div>
-            <div className="cards">
+            <div className={styles.cards}>
               <img src="/logo-firefox.svg" alt="Logo de Firefox" />
-              <p className="cards-title">Add to Firefox</p>
+              <p className={styles.cards_title}>Add to Firefox</p>
               <p>Minimum version 55</p>
               <img src="/bg-dots.svg" alt="Separateur de texte" />
-              <a href="/">Add & Install Extension</a>
+              <a href="/" className={styles.button_primary}>Add & Install Extension</a>
             </div>
-            <div className="cards">
+            <div className={styles.cards}>
               <img src="/logo-opera.svg" alt="Logo de Opera" />
-              <p className="cards-title">Add to Opera</p>
+              <p className={styles.cards_title}>Add to Opera</p>
               <p>Minimum version 46</p>
               <img src="/bg-dots.svg" alt="Separateur de texte" />
-              <a href="/">Add & Install Extension</a>
+              <a href="/" className={styles.button_primary}>Add & Install Extension</a>
             </div>
           </div>
         </section>
 
-        <section className='faq'>
+        <section className={styles.faq}>
           <h6>Frequently Asked Questions</h6>
           <p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
           <Accordeon />
         </section>
 
-        <section className="newsletter">
-          <p className='letter-space-title'>35,000+ ALREADY JOINED</p>
+        <section className={styles.newsletter}>
+          <p className={styles.letter_space_title}>35,000+ ALREADY JOINED</p>
           <h6>Stay up-to-date with what<br />we’re doing</h6>
           <form action="get">
-            <input type="email" name="e-mail" id="e-mail" placeholder='example@email/com'/>
-            <input type="submit" value="Contact Us" />
+            <input type="email" name="e-mail" id="e-mail" placeholder='Enter your email address'/>
+            <input type="submit" value="Contact Us" className={styles.button_red} />
           </form>
         </section>
 

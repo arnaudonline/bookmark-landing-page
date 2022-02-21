@@ -1,4 +1,74 @@
 @import "colors";
-@import 'fonts';
+@import "fonts";
 @import "mixins";
+@import "button";
 
+/* SECTION INTRO */
+.intro {
+    padding-top: 0;
+    img.intro_image {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 94px;
+    }
+    .intro_txt {
+        .button_group {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
+
+/* SECTION CARDS */
+.cards_block {
+    .cards {
+        background: #FFFFFF;
+        box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
+        border-radius: 15px;
+        margin-bottom: 40px;
+        padding: 24px 24px 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .cards_title {
+            font-size: 20px;
+            margin-bottom: 5px;
+            color: $neutral-dark;
+        }
+        img {
+            margin-bottom: 32px;
+        }
+    }
+}
+
+/* SECTION NEWSLETTER */
+section.newsletter {
+    background: $color-primary;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    p.letter_space_title {
+        color: #FFFFFF;
+        font-size: 12px;
+        letter-spacing: 4.5px;
+        margin-bottom: 0;
+    }
+    h6 {
+        color: #FFFFFF;
+        margin-bottom: 32px;
+    }
+    input[type=email] {
+        background: #FFFFFF;
+        border-radius: 5px;
+        border: none;
+        box-shadow: none;
+        padding: 15px 20px;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    input[type=email]::placeholder {
+        opacity: 50%;
+    }
+    input[type=submit] {
+        width: 100%;
+    }
+}

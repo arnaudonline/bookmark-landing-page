@@ -7,12 +7,27 @@ $font-rubik: 'Rubik', sans-serif;
     font-family: $font-rubik;
     font-size: 1.8rem;
     font-weight: 500;
-    color: $neutral-dark;
+    text-align: center;
+    margin-bottom: 16px;
+    line-height: 40px;
 }
   
 @mixin font-content() {
     font-family: $font-rubik;
-    font-size: 1rem;
     font-weight: 400;
-    color: $neutral-gray;
+    text-align: center;
+    margin-bottom: 32px;
+    line-height: 25px;
+}
+
+@mixin font-btn-primary() {
+    color: white;
+    font-size: 14px!important;
+    @include font-content;
+}
+
+@mixin font-btn-secondary() {
+    color: $neutral-dark;
+    font-size: 14px!important;
+    @include font-content;
 }

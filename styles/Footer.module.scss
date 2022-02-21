@@ -1,0 +1,26 @@
+@import "colors";
+@import "fonts";
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+    background: $neutral-dark;
+    img.logo {
+        margin-bottom: 40px;
+    }
+    li {
+        list-style-type: none;
+        a {
+            color: #FFFFFF;
+        }
+    }
+    .socials {
+        display: flex;
+        justify-content: space-between;
+        width: 90px;
+    }
+}

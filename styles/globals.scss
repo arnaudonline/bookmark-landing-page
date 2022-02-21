@@ -45,7 +45,7 @@ img {
 html,
 body {
   height: 100%;
-  background-color: #e6e6e6;
+  background-color: #fff;
   border: 0 solid transparent;
   font-size: 16px;
   margin: 0;
@@ -70,8 +70,10 @@ a {
   text-decoration: none;
 }
 
-p {
+p,
+li {
   @include font-content;
+  color: $neutral-gray;
 }
 
 h1,
@@ -81,4 +83,10 @@ h4,
 h5,
 h6 {
   @include font-title;
+  color: $neutral-dark;
+}
+
+section {
+  padding: 2rem 32px;
+  width: 100%;
 }

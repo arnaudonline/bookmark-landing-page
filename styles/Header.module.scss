@@ -1,4 +1,13 @@
-Image.logo {
-    height: 50px;
-    width: auto;
+@import "mixins";
+
+header.header {
+    height: 25px;
+    margin: 40px 32px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+        height: 25px;
+        width: auto;
+    }
 }

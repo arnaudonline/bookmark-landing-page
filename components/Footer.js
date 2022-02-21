@@ -1,23 +1,25 @@
 import Image from "next/image";
+import styles from "../styles/Footer.module.scss";
 
 import Logo from "../public/logo-bookmark.svg";
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className={styles.footer}>
             <Image 
                 src={Logo}
                 alt="Logo de Bookmark"
-                className="logo"
+                className={styles.logo}
+                layout=""
             />
-            <nav className="footer-menu">
+            <nav className={styles.footer_menu}>
                 <ul>
                     <li><a href="/">FEATURES</a></li>
                     <li><a href="/">PRICING</a></li>
                     <li><a href="/">CONTACT</a></li>
                 </ul>
             </nav>
-            <div className="socials">
+            <div className={styles.socials}>
                 <img src="icon-facebook.svg" alt="" />
                 <img src="icon-twitter.svg" alt="" />
             </div>
