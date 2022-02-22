@@ -1,13 +1,39 @@
 @import "mixins";
+@import "button";
 
 header.header {
+  height: 25px;
+  margin: 40px 32px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
     height: 25px;
-    margin: 40px 32px 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .logo {
-        height: 25px;
-        width: auto;
+    width: auto;
+  }
+  .nav {
+    display: none;
+  }
+}
+
+@include tablet {
+  header.header {
+    .nav_mobile {
+      display: none;
     }
+    .nav {
+      display: flex;
+      justify-content: space-around;
+      li {
+        width: auto;
+        list-style-type: none;
+        color: $neutral-dark;
+        margin: 0 20px;
+        transition: all 0.2s ease;
+      }
+      li:hover {
+        color: $color-secondary;
+      }
+    }
+  }
 }

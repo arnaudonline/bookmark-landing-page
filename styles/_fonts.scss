@@ -19,15 +19,3 @@ $font-rubik: "Rubik", sans-serif;
   margin-bottom: 32px;
   line-height: 25px;
 }
-
-@mixin font-btn-primary() {
-  color: white;
-  font-size: 14px !important;
-  @include font-content;
-}
-
-@mixin font-btn-secondary() {
-  color: $neutral-dark;
-  font-size: 14px !important;
-  @include font-content;
-}

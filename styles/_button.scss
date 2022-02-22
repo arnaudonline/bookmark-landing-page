@@ -2,31 +2,57 @@
 @import "fonts";
 
 .button_primary {
-    background: $color-primary;
-    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
-    border-radius: 5px;
-    border: none;
-    padding: 10px 16px;
-    color: white;
-    font-size: 14px!important;
-    width: fit-content;
-    display: block;
-    @include font-btn-primary;
+  background: $color-primary;
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  padding: 12px 15px;
+  width: fit-content;
+  display: block;
+  color: white;
+  font-size: 14px !important;
+  transition: all 0.2s ease;
+  @include font-content;
+}
+
+.button_primary:hover {
+  border: 2px solid $color-primary;
+  background: transparent;
+  color: $color-primary;
 }
 
 .button_secondary {
-    background: $light-gray;
-    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
-    border-radius: 5px;
-    padding: 10px 16px;
-    @include font-btn-secondary;
+  background: $light-gray;
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  padding: 12px 15px;
+  color: $neutral-dark;
+  font-size: 14px !important;
+  transition: all 0.2s ease;
+  @include font-content;
+}
+
+.button_secondary:hover {
+  border: 2px solid $neutral-dark;
+  background: transparent;
+  color: $neutral-dark;
 }
 
 .button_red {
-    background: $color-secondary;
-    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
-    border-radius: 5px;
-    padding: 10px 16px;
-    border: none;
-    @include font-btn-primary;
+  background: $color-secondary;
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  padding: 12px 28px;
+  color: white;
+  font-size: 14px !important;
+  transition: all 0.2s ease;
+  @include font-content;
+}
+
+.button_red:hover {
+  border: 2px solid $color-secondary;
+  background: #ffffff;
+  color: $color-secondary;
 }

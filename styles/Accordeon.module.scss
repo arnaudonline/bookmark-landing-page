@@ -19,6 +19,10 @@
     letter-spacing: 0.5px;
     opacity: 0.75;
     position: relative;
+    transition: all 0.2s ease;
+  }
+  button:hover {
+    color: $color-secondary;
   }
   p.content {
     text-align: left;

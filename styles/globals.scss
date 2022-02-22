@@ -85,10 +85,3 @@ h6 {
   @include font-title;
   color: $neutral-dark;
 }
-
-section {
-  display: block;
-  margin: 0 auto;
-  padding: 2rem 32px;
-  max-width: 1170px;
-}

@@ -20,7 +20,11 @@ const Accordeon = () => {
                   ? styles.title + " " + styles.active_title
                   : styles.title
               }
-              onClick={() => activeAccor(key)}
+              onClick={
+                accorState === key
+                  ? () => activeAccor(null)
+                  : () => activeAccor(key)
+              }
             >
               {data.question}
             </button>
