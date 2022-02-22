@@ -8,6 +8,7 @@ This is a solution to the [Bookmark landing page challenge on Frontend Mentor](h
 
 - Semantic HTML5 markup
 - CSS custom properties
+- SASS
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
